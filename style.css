@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fafafa;
+    color: #171717;
+    font-family: "DM Sans", sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+/* -------------------------
+   HERO
+------------------------- */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.greeting {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+
+    color: #666;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(60px, 8vw, 100px);
+    line-height: 0.95;
+    font-weight: 500;
+
+    letter-spacing: -3px;
+}
+
+.subtitle {
+    margin-top: 30px;
+
+    font-size: 18px;
+    color: #666;
+}
+
+.subtitle span {
+    margin: 0 8px;
+    color: #aaa;
+}
+
+
+/* -------------------------
+   SOCIAL BUTTONS
+------------------------- */
+
+.social-buttons {
+    display: flex;
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 12px 20px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.social-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.social-button i {
+    font-size: 17px;
+}
+
+
+/* LinkedIn */
+
+.linkedin {
+    background: #0A66C2;
+}
+
+
+/* Gmail */
+
+.gmail {
+    background: #EA4335;
+}
+
+
+/* -------------------------
+   ABOUT
+------------------------- */
+
+.about {
+    padding: 100px 0 150px;
+}
+
+.section-label {
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #999;
+
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 6vw, 75px);
+    font-weight: 500;
+
+    letter-spacing: -2px;
+}
+
+.about h2 span {
+    font-style: italic;
+}
+
+.about-text {
+    max-width: 650px;
+
+    margin-top: 30px;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #666;
+}
+
+
+/* -------------------------
+   MOBILE
+------------------------- */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 0 24px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        letter-spacing: -2px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .social-buttons {
+        flex-wrap: wrap;
+    }
+
+    .about {
+        padding-top: 70px;
+    }
+}
